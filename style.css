@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+* {
+    background-color: black;
+    
+}
+
 h1 {
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 60px;
+    margin-top: 20vh;
+    color: white;
+}
+
+button {
+    width: 60vw;
+    height: 30vh;
+    margin-left: 185px;
+    background-color: #5500ff;
+    border: none;
+    border-radius: 10%;
+}
+
+p {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
 }
