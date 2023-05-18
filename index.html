@@ -7,20 +7,29 @@
 
 <body>
   <h1>Haptic Feedback</h1>
-  <button onclick="vibrateDevice()"></button>
-  <p>Go ahead, press the area<br>above and find out what happens!</p>
+  <button onmousedown="startVibration()" onmouseup="stopVibration()" ontouchstart="startVibration()" ontouchend="stopVibration()"></button>
+  <p>Go ahead, press and hold the button<br>to experience the haptic feedback!</p>
 </body>
 
 <script>
-    function vibrateDevice() {
-      if ("vibrate" in navigator) {
-        // Vibrate for 1000 milliseconds (1 second)
-        navigator.vibrate(1000);
-      } else {
-        // Vibration API is not supported
-        alert("Vibration API is not supported on this device.");
-      }
+  var vibrationInterval;
+
+  function startVibration() {
+    if ("vibrate" in navigator) {
+      // Start vibrating with an indefinite duration
+      navigator.vibrate([1000]);
+      // Or use: navigator.vibrate(1000);
+    } else {
+      alert("Vibration API is not supported on this device.");
     }
-  </script>
+  }
+
+  function stopVibration() {
+    if ("vibrate" in navigator) {
+      // Stop the vibration
+      navigator.vibrate(0);
+    }
+  }
+</script>
 
 </html>
