@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Haptic Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Haptic Feedback</h1>
+  <button onclick="vibrateDevice()">Vibrate</button>
+</body>
+
+<script>
+    function vibrateDevice() {
+      if ("vibrate" in navigator) {
+        // Vibrate for 1000 milliseconds (1 second)
+        navigator.vibrate(1000);
+      } else {
+        // Vibration API is not supported
+        alert("Vibration API is not supported on this device.");
+      }
+    }
+  </script>
+  
+</html>
