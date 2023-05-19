@@ -28,3 +28,13 @@ p {
     font-family: 'Quicksand', sans-serif;
     color: white;
 }
+
+#installApp {
+    margin-top: 10vh;
+    width: 16vw;
+    height: 3vh;
+    font-size: 3.5vw;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    margin-left: 40vw;
+}
