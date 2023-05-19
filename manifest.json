@@ -8,9 +8,11 @@
         "sizes": "192x192"
       },
       {
-        "src": "/images/icons-512.png",
+        "src": "/images/icons-192.png",
         "type": "image/png",
         "sizes": "512x512"
       }
-    ]
+    ],
+    "id": "https://stellar-tapioca-2cad1b.netlify.app/",
+    "start_url": "https://stellar-tapioca-2cad1b.netlify.app/"
   }
