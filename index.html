@@ -20,24 +20,5 @@
     </p>
   </body>
 
-  <script>
-    var vibrationInterval;
-
-    function startVibration() {
-      if ("vibrate" in navigator) {
-        // Start vibrating with an indefinite duration
-        navigator.vibrate([1000]);
-        // Or use: navigator.vibrate(1000);
-      } else {
-        alert("Vibration API is not supported on this device.");
-      }
-    }
-
-    function stopVibration() {
-      if ("vibrate" in navigator) {
-        // Stop the vibration
-        navigator.vibrate(0);
-      }
-    }
-  </script>
+  <script src="script.js"></script>
 </html>
